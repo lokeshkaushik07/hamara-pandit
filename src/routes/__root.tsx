@@ -85,6 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Discover the sacred power of gemstones. Browse our complete guide to Vedic astrology gemstones, their benefits, and how to wear them." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Ratna Vibhushan — Gemstone Guide" },
+      { name: "twitter:description", content: "Discover the sacred power of gemstones. Browse our complete guide to Vedic astrology gemstones, their benefits, and how to wear them." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/af41f93a-2e46-49a1-8cac-14ba8e94f144/id-preview-85658549--06f62432-341d-4bed-b7db-0b9432409b18.lovable.app-1781314929663.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/af41f93a-2e46-49a1-8cac-14ba8e94f144/id-preview-85658549--06f62432-341d-4bed-b7db-0b9432409b18.lovable.app-1781314929663.png" },
     ],
     links: [
       {
