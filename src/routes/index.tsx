@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { gemstones, zodiacSigns } from "@/lib/gemstones";
 import { Gem, Search, ChevronRight, Sparkles, Shield, Heart } from "lucide-react";
+import heroImage from "@/assets/hero-gems.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
