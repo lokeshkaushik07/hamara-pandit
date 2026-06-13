@@ -21,11 +21,18 @@ function HomePage() {
   return (
     <div className="scroll-smooth">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-maroon-deep">
-        <div className="absolute inset-0 pattern-lotus opacity-50" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-maroon/40 to-maroon-deep/90" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
-          <div className="mx-auto max-w-3xl">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Precious gemstones on golden silk"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-maroon-deep/95 via-maroon-deep/80 to-maroon-deep/60" />
+          <div className="absolute inset-0 pattern-lotus opacity-30" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+          <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-maroon/50 px-4 py-1.5 text-xs font-medium text-gold-light backdrop-blur-sm mb-8">
               <Sparkles className="h-3.5 w-3.5" />
               <span>Ancient Wisdom, Modern Discovery</span>
@@ -35,11 +42,11 @@ function HomePage() {
               <br />
               <span className="text-gradient-gold">Sacred Stone</span>
             </h1>
-            <p className="mt-6 text-lg text-gold-muted max-w-xl mx-auto leading-relaxed">
+            <p className="mt-6 text-lg text-gold-muted max-w-xl leading-relaxed">
               Explore the mystical world of Vedic gemstones. Each stone resonates with cosmic energies 
               to bring balance, prosperity, and protection into your life.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
               <Link
                 to="/catalog"
                 className="inline-flex items-center gap-2 btn-primary-royal px-6 py-3 rounded-lg text-sm font-semibold"
@@ -50,7 +57,7 @@ function HomePage() {
               <Link
                 to="/catalog"
                 search={{ filter: "zodiac" }}
-                className="inline-flex items-center gap-2 btn-secondary-royal px-6 py-3 rounded-lg text-sm font-semibold"
+                className="inline-flex items-center gap-2 bg-transparent text-gold border border-gold/40 px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gold/10 transition-colors"
               >
                 Find by Zodiac
                 <ChevronRight className="h-4 w-4" />
